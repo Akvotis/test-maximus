@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <style type="text/css"></style>
+    <meta charset="utf-8">
+    <title>Maximus</title>
+    <meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="preload" href="scripts/libs.min.js" as="script">
+    <link rel="preload" href="scripts/main.min.js" as="script">
+    <link rel="preload" href="styles/style.min.css" as="style">
+    <link rel="stylesheet" href="styles/style.min.css?_v=20221102180616">
+    <noscript> 
+      <link rel="stylesheet" href="css/style.min.css?_v=20221102180616">
+    </noscript>
+  </head>
+  <body>
+    <main>
+      <section class="test">
+        <h1>Тестовое задание на позицию Middle Frontend-программист в компанию MAXIMUS MEDIA</h1>
+        <div class="test__block"> 
+          <div class="test__title">Первое задание</div>
+          <form class="form">
+            <div class="form__title">Выберите бренд:</div>
+            <fieldset class="form__block">
+              <div class="radio js-radio">
+                <input class="radio__field" type="radio" name="radio" id="r_sarabanda" value="Sarabanda" checked>
+                <label class="radio__label" for="r_sarabanda">Sarabanda</label>
+              </div>
+              <div class="radio js-radio">
+                <input class="radio__field" type="radio" name="radio" id="r_minibanda" value="Minibanda">
+                <label class="radio__label" for="r_minibanda">Minibanda</label>
+              </div>
+              <div class="radio js-radio">
+                <input class="radio__field" type="radio" name="radio" id="r_ido" value="iDO">
+                <label class="radio__label" for="r_ido">iDO</label>
+              </div>
+              <div class="radio js-radio">
+                <input class="radio__field" type="radio" name="radio" id="r_superga" value="Superga">
+                <label class="radio__label" for="r_superga">Superga</label>
+              </div>
+            </fieldset>
+            <fieldset class="form__block">
+              <div class="checkbox">
+                <input class="checkbox__field" type="checkbox" name="sarabanda" id="c_sarabanda" value="Sarabanda" checked>
+                <label class="checkbox__label" for="c_sarabanda">Sarabanda</label>
+              </div>
+              <div class="checkbox">
+                <input class="checkbox__field" type="checkbox" name="minibanda" id="c_minibanda" value="Minibanda">
+                <label class="checkbox__label" for="c_minibanda">Minibanda</label>
+              </div>
+              <div class="checkbox">
+                <input class="checkbox__field" type="checkbox" name="ido" id="c_ido" value="iDO">
+                <label class="checkbox__label" for="c_ido">iDO</label>
+              </div>
+              <div class="checkbox">
+                <input class="checkbox__field" type="checkbox" name="superga" id="c_superga" value="Superga">
+                <label class="checkbox__label" for="c_superga">Superga</label>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="test__block"> 
+          <div class="test__title">Второе задание</div>
+          <div class="button">
+            <button class="js-call-popup">Заказать консультацию</button>
+          </div>
+        </div>
+        <div class="test__block"> 
+          <div class="test__title">Третье задание</div>
+          <div class="list js-section__tabs">
+            <div class="list__tabs js-tabs__head">
+              <div class="list__tab js-tab list__tab-active" data-tab="inex">самый дешёвый</div>
+              <div class="list__tab js-tab" data-tab="fast">самый быстрый</div>
+            </div>
+            <div class="list__body js-tabs__body">
+              <div class="list__cards list__cards-active" data-tab="inex">
+                <div class="list__card">
+                  <div class="list__card-head">
+                    <div class="list__card-price">13 400 P</div><img class="list__card-logo" src="./img/logo-s7.png" alt="logo s7 airlines">
+                  </div>
+                  <div class="list__card-content">
+                    <div class="list__card-info"> <span class="uppercase">mow - hkt</span><span>10:45 - 08:00</span></div>
+                    <div class="list__card-info"> <span class="uppercase">mow - hkt</span><span>11:20 - 00:50</span></div>
+                    <div class="list__card-info"> <span>в пути</span><span>21ч 15м</span></div>
+                    <div class="list__card-info"> <span>в пути</span><span>13ч 30м</span></div>
+                    <div class="list__card-info"> <span>2 пересадки</span><span class="uppercase">hkg, jnb</span></div>
+                    <div class="list__card-info"> <span>1 пересадка</span><span class="uppercase">hkg</span></div>
+                  </div>
+                </div>
+                <div class="list__card">
+                  <div class="list__card-head">
+                    <div class="list__card-price">13 400 P</div><img class="list__card-logo" src="./img/logo-s7.png" alt="logo s7 airlines">
+                  </div>
+                  <div class="list__card-content">
+                    <div class="list__card-info"> <span class="uppercase">mow - hkt</span><span>10:45 - 08:00</span></div>
+                    <div class="list__card-info"> <span class="uppercase">mow - hkt</span><span>11:20 - 00:50</span></div>
+                    <div class="list__card-info"> <span>в пути</span><span>21ч 15м</span></div>
+                    <div class="list__card-info"> <span>в пути</span><span>13ч 30м</span></div>
+                    <div class="list__card-info"> <span>2 пересадки</span><span class="uppercase">hkg, jnb</span></div>
+                    <div class="list__card-info"> <span>1 пересадка</span><span class="uppercase">hkg</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="list__cards js-tab-content" data-tab="fast">
+                <div class="list__card">
+                  <div class="list__card-head">
+                    <div class="list__card-price">13 400 P</div><img class="list__card-logo" src="./img/logo-s7.png" alt="logo s7 airlines">
+                  </div>
+                  <div class="list__card-content">
+                    <div class="list__card-info"> <span class="uppercase">mow - hkt</span><span>10:45 - 08:00</span></div>
+                    <div class="list__card-info"> <span class="uppercase">mow - hkt</span><span>11:20 - 00:50</span></div>
+                    <div class="list__card-info"> <span>в пути</span><span>21ч 15м</span></div>
+                    <div class="list__card-info"> <span>в пути</span><span>13ч 30м</span></div>
+                    <div class="list__card-info"> <span>2 пересадки</span><span class="uppercase">hkg, jnb</span></div>
+                    <div class="list__card-info"> <span>1 пересадка</span><span class="uppercase">hkg</span></div>
+                  </div>
+                </div>
+                <div class="list__card">
+                  <div class="list__card-head">
+                    <div class="list__card-price">13 400 P</div><img class="list__card-logo" src="./img/logo-s7.png" alt="logo s7 airlines">
+                  </div>
+                  <div class="list__card-content">
+                    <div class="list__card-info"> <span class="uppercase">mow - hkt</span><span>10:45 - 08:00</span></div>
+                    <div class="list__card-info"> <span class="uppercase">mow - hkt</span><span>11:20 - 00:50</span></div>
+                    <div class="list__card-info"> <span>в пути</span><span>21ч 15м</span></div>
+                    <div class="list__card-info"> <span>в пути</span><span>13ч 30м</span></div>
+                    <div class="list__card-info"> <span>2 пересадки</span><span class="uppercase">hkg, jnb</span></div>
+                    <div class="list__card-info"> <span>1 пересадка</span><span class="uppercase">hkg</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="test">
+        <div class="test__block"> 
+          <div class="test__title">Четвёртое задание</div>
+        </div>
+      </section>
+      <div class="bildboard">
+        <div class="bildboard__wrapper">
+          <div class="bildboard__image"> 
+            <picture> 
+              <source media="(min-width: 920px)" srcset="./img/hero2x.jpg 2x, ./img/hero.jpg 1x"><img src="./img/hero-mobile.jpg" alt="banner">
+            </picture>
+          </div>
+          <div class="bildboard__content">
+            <h1>Первые заявки из контекстной рекламы уже через 7 дней!</h1>
+            <p>Повышаем продажи, а не просто настраиваем контекстную рекламу</p><a href="javascript:void(0);">Оставить заявку</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="overlay js-overlay"></div>
+    <div class="popup js-popup">
+      <div class="popup__close js-close">
+        <svg class="icon icon-close ">
+          <use xlink:href="img/symbol/symbol.svg#close"></use>
+        </svg>
+      </div>
+      <div class="popup__content"> 
+        <div class="popup__title"> 
+          <h3>Заказать консультацию</h3>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js?_v=20221102180616" type="text/javascript" defer></script>
+    <script src="scripts/libs.min.js?_v=20221102180616" defer></script>
+    <script src="scripts/main.min.js?_v=20221102180616" defer></script>
+  </body>
+</html>
