@@ -1,0 +1,160 @@
+extends ../common/layout
+
+block content
+    main
+        section.test
+            h1 Тестовое задание на позицию Middle Frontend-программист в компанию MAXIMUS MEDIA
+
+            .test__block 
+                .test__title Первое задание
+                form.form
+                    .form__title Выберите бренд:
+                    fieldset.form__block
+                        .radio.js-radio
+                            input(type="radio" name="radio" id="r_sarabanda" value="Sarabanda" checked).radio__field
+                            label(for="r_sarabanda").radio__label Sarabanda
+                        .radio.js-radio
+                            input(type="radio" name="radio" id="r_minibanda" value="Minibanda").radio__field
+                            label(for="r_minibanda").radio__label Minibanda
+                        .radio.js-radio
+                            input(type="radio" name="radio" id="r_ido" value="iDO").radio__field
+                            label(for="r_ido").radio__label iDO
+                        .radio.js-radio
+                            input(type="radio" name="radio" id="r_superga" value="Superga").radio__field
+                            label(for="r_superga").radio__label Superga
+
+                    fieldset.form__block
+                        .checkbox
+                            input(type="checkbox" name="sarabanda" id="c_sarabanda" value="Sarabanda" checked).checkbox__field
+                            label(for="c_sarabanda").checkbox__label Sarabanda
+                        .checkbox
+                            input(type="checkbox" name="minibanda" id="c_minibanda" value="Minibanda").checkbox__field
+                            label(for="c_minibanda").checkbox__label Minibanda
+                        .checkbox
+                            input(type="checkbox" name="ido" id="c_ido" value="iDO").checkbox__field
+                            label(for="c_ido").checkbox__label iDO
+                        .checkbox
+                            input(type="checkbox" name="superga" id="c_superga" value="Superga").checkbox__field
+                            label(for="c_superga").checkbox__label Superga
+                    
+            .test__block 
+                .test__title Второе задание
+                .button
+                    button.js-call-popup Заказать консультацию
+
+            .test__block 
+                .test__title Третье задание
+                .list.js-section__tabs
+                    .list__tabs.js-tabs__head
+                        .list__tab.js-tab.list__tab-active(data-tab="inex") самый дешёвый
+                        .list__tab.js-tab(data-tab="fast") самый быстрый
+                    
+                    .list__body.js-tabs__body
+                        .list__cards.list__cards-active(data-tab="inex")
+                            .list__card
+                                .list__card-head
+                                    .list__card-price 13 400 P
+                                    img.list__card-logo(src="./img/logo-s7.png" alt="logo s7 airlines")
+                                .list__card-content
+                                    .list__card-info 
+                                        span.uppercase mow - hkt
+                                        span 10:45 - 08:00
+                                    .list__card-info 
+                                        span.uppercase mow - hkt
+                                        span 11:20 - 00:50
+                                    .list__card-info 
+                                        span в пути
+                                        span 21ч 15м
+                                    .list__card-info 
+                                        span в пути
+                                        span 13ч 30м
+                                    .list__card-info 
+                                        span 2 пересадки
+                                        span.uppercase hkg, jnb
+                                    .list__card-info 
+                                        span 1 пересадка
+                                        span.uppercase hkg
+                            .list__card
+                                .list__card-head
+                                    .list__card-price 13 400 P
+                                    img.list__card-logo(src="./img/logo-s7.png" alt="logo s7 airlines")
+                                .list__card-content
+                                    .list__card-info 
+                                        span.uppercase mow - hkt
+                                        span 10:45 - 08:00
+                                    .list__card-info 
+                                        span.uppercase mow - hkt
+                                        span 11:20 - 00:50
+                                    .list__card-info 
+                                        span в пути
+                                        span 21ч 15м
+                                    .list__card-info 
+                                        span в пути
+                                        span 13ч 30м
+                                    .list__card-info 
+                                        span 2 пересадки
+                                        span.uppercase hkg, jnb
+                                    .list__card-info 
+                                        span 1 пересадка
+                                        span.uppercase hkg
+                        .list__cards.js-tab-content(data-tab="fast")
+                            .list__card
+                                .list__card-head
+                                    .list__card-price 13 400 P
+                                    img.list__card-logo(src="./img/logo-s7.png" alt="logo s7 airlines")
+                                .list__card-content
+                                    .list__card-info 
+                                        span.uppercase mow - hkt
+                                        span 10:45 - 08:00
+                                    .list__card-info 
+                                        span.uppercase mow - hkt
+                                        span 11:20 - 00:50
+                                    .list__card-info 
+                                        span в пути
+                                        span 21ч 15м
+                                    .list__card-info 
+                                        span в пути
+                                        span 13ч 30м
+                                    .list__card-info 
+                                        span 2 пересадки
+                                        span.uppercase hkg, jnb
+                                    .list__card-info 
+                                        span 1 пересадка
+                                        span.uppercase hkg
+                            .list__card
+                                .list__card-head
+                                    .list__card-price 13 400 P
+                                    img.list__card-logo(src="./img/logo-s7.png" alt="logo s7 airlines")
+                                .list__card-content
+                                    .list__card-info 
+                                        span.uppercase mow - hkt
+                                        span 10:45 - 08:00
+                                    .list__card-info 
+                                        span.uppercase mow - hkt
+                                        span 11:20 - 00:50
+                                    .list__card-info 
+                                        span в пути
+                                        span 21ч 15м
+                                    .list__card-info 
+                                        span в пути
+                                        span 13ч 30м
+                                    .list__card-info 
+                                        span 2 пересадки
+                                        span.uppercase hkg, jnb
+                                    .list__card-info 
+                                        span 1 пересадка
+                                        span.uppercase hkg
+        section.test
+            .test__block 
+                .test__title Четвёртое задание
+        .bildboard
+            .bildboard__wrapper
+                .bildboard__image 
+                    picture 
+                        source(media="(min-width: 920px)" srcset="./img/hero2x.jpg 2x, ./img/hero.jpg 1x")
+                        img(src= "./img/hero-mobile.jpg", alt="banner")
+                .bildboard__content
+                    h1 Первые заявки из контекстной рекламы уже через 7 дней!
+                    p Повышаем продажи, а не просто настраиваем контекстную рекламу
+
+                    a(href="javascript:void(0);") Оставить заявку

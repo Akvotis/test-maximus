@@ -1,0 +1,133 @@
+.bildboard {
+  position: relative;
+  z-index: 1;
+  margin-top: 30px;
+
+  &__image {
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .bildboard__wrapper {
+    height: 500px;
+
+    @media screen and (min-width: 920px) {
+      height: calc(100vw / 2.7);
+    }
+
+    @media screen and (min-width: 1500px) {
+      height: calc(100vw / 3);
+    }
+  }
+
+  .bildboard__content {
+    @include container;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 22px;
+
+    h1 {
+      max-width: 80%;
+
+      font-family: $font;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 120%;
+      color: $black;
+      text-align: center;
+
+      @media screen and (min-width: 600px) {
+        font-size: 36px;
+      }
+
+      @media screen and (min-width: 768px) {
+        max-width: 65%;
+      }
+
+      @media screen and (min-width: 1200px) {
+        font-size: 54px;
+        max-width: 864px;
+      }
+
+      @media screen and (min-width: 1500px) {
+        font-size: 80px;
+        line-height: 99px;
+      }
+    }
+
+    p {
+      max-width: 65%;
+      margin-top: 20px;
+
+      font-family: $font;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: $black;
+      text-align: center;
+
+      @media screen and (min-width: 600px) {
+        font-size: 20px;
+      }
+
+      @media screen and (min-width: 768px) {
+        max-width: 50%;
+      }
+
+      @media screen and (min-width: 1200px) {
+        font-size: 24px;
+        max-width: 630px;
+      }
+    }
+
+    a {
+      margin-top: 42px;
+
+      font-family: $font;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.03em;
+      color: $black;
+
+      padding: 15px 34px;
+      background: $yellow;
+      border-radius: 100px;
+      transform: all ease-in-out 0.3s;
+
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          background: $orange;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 320px) {
+    &__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+
+    .bildboard__content {
+      justify-content: center;
+      padding-top: 0;
+    }
+  }
+}
